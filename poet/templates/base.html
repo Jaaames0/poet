@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<header>
+	<a href="{% url 'home' %}">Главная страница.</a> | <a href="{% url 'about' %}">Полезная информация.</a>| <a href = "/articles"> Статьи </a>
+</header>
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}The Poet Renesmee{% endblock %}</title>
+</head>
+<body>
+
+	{% block content %}{% endblock %}
+
+</body>
+</html>
